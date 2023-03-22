@@ -1,27 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';
-import BasicInfo from './BasicInfo';
 
-class App extends React.Component {
-constructor(props) {
-  super(props)
-  this.state = {person: {
-    name: 'Diana',
-    number: 704840,
-    dob: 'july 30 1997'
-  }}
+function App() {
 
-}
-render() {
   return (
-        <div> 
-          <header className="App-header">
+    <div className="App">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-          <BasicInfo person={this.state.person} />
+        <div>Dianasaur, 704, july 30 1997</div>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -31,9 +20,8 @@ render() {
           Learn React
         </a>
       </header>
-        </div>
-  )
-};
+    </div>
+  );
 }
 
 export default App;
